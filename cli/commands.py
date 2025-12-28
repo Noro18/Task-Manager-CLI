@@ -3,11 +3,11 @@ from services.task_services import add_task, list_tasks, mark_done, delete_task
 # thsi is the parser 
 
 def run():
-    parser = argparse.ArgumentParser(description="A simple script parser")
+    parser = argparse.ArgumentParser(description="A simple script parser") # 
     sub = parser.add_subparsers(dest="command")
     # add arguments 
 
-    add = sub.add_parser("add")
+    add = sub.add_parser("add") # this is the commands 
     add.add_argument("title")
     add.add_argument("--due")
 

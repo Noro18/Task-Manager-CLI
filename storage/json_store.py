@@ -11,5 +11,5 @@ def load_tasks():
     
 def save_tasks(tasks):
     DATA_FILE.parent.mkdir(exist_ok=True)
-    with open(DATA_FILE, "w") as f:
+    with open(DATA_FILE, "w") as f: # wainhira run uza 'w' mak nia file sira sei truncated ou terhapus 
         json.dump(tasks, f, indent=2)
