@@ -26,7 +26,15 @@ def run():
 
 
     if args.command == 'add':
-        task = add_task(args.title, args.due)
+        task = add_task(args.title)
         print("Added: ", task)
+
+    elif args.command == 'list':
+        
+        for t in list_tasks(args.status):
+            print(t)
+    elif args.command == 'done':
+        task = mark_done(args.id)
+        print(f"Done: {task}")
     else:
         parser.print_help()
