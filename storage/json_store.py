@@ -6,7 +6,7 @@ DATA_FILE = Path("data/tasks.json")
 def load_tasks():
     if not DATA_FILE.exists():
         return []
-    with open(DATA_FILE, 'r') as f:
+    with open(DATA_FILE, 'r') as f: # with keyword ne hanesan replacement dt ba try catch exeption iha python tanba nia automatically taka file nia jadi no memory leaks 
         return json.load(f)
     
 def save_tasks(tasks):
