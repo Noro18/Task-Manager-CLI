@@ -1,2 +1,5 @@
-data/tasks.json
+
+cli/__pycache__/commands.cpython-313.pyc
+services/__pycache__/task_services.cpython-313.pyc
+storage/__pycache__/json_store.cpython-313.pyc
 data/tasks.json
