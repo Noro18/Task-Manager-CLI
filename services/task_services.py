@@ -15,8 +15,9 @@ def add_task(title, due=None):
     }
 
     tasks.append(task)
-    save_tasks
+    save_tasks(tasks)
 
+    return tasks
 def list_tasks(status=None):
     tasks = load_tasks()
 
